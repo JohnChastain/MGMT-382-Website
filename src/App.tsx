@@ -1,9 +1,9 @@
 export function App() {
   const teamMembers = [
-    "Joohn Chastain",
+    "John Chastain",
     "Ryan Shea",
     "Daniel Adair",
-    "Dechex Edmonds",
+    "Dechez Edmonds",
     "Camden Rewerts",
   ];
 
