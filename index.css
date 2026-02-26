@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --sbx-green-900: #0f3d2e;
+  --sbx-green-700: #006241;
+  --sbx-green-500: #1e8a57;
+  --sbx-cream: #f2ebe3;
+  --sbx-gold: #c5a26a;
+}
+
+body {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 20% 10%, rgb(197 162 106 / 14%) 0, transparent 40%),
+    radial-gradient(circle at 90% 15%, rgb(30 138 87 / 13%) 0, transparent 34%),
+    linear-gradient(180deg, #f8f5f0 0%, #f2ebe3 52%, #f7f3ee 100%);
+  color: #12382d;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "DM Serif Display", Georgia, serif;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 700ms ease-out both;
+  }
+
+  .animate-fade-up-delay-1 {
+    animation: fade-up 700ms 120ms ease-out both;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fade-up 700ms 240ms ease-out both;
+  }
+
+  .animate-fade-up-delay-3 {
+    animation: fade-up 700ms 360ms ease-out both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
